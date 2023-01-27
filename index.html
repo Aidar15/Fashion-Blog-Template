@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fashion Blog Template</title>
+    <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body class="page__body">
     <header class="main-header">
@@ -36,12 +39,13 @@
         <div class="block-main">
             <section class="review">
                 <div class="review__wrapper">
-                    <img class="review__phone" src="img/Bitmap-21.png" width="1920" height="700"> 
-                    <img class="review__gradient" src="img/Rectangle.png" width="1920" height="300"> 
+                    <div class="review__gradient"><img class="review__image" alt="Main image" src="img/Bitmap-21.jpg"></div>
                     <header class="review__example">
                         <p class="review__autor">Vehicle</p>
                         <h2 class="review__message">One of Saturn’s largest rings may be newer than anyone</h2>
-                        <p class="review__information">June 6, 2019 &nbsp; <span>By</span> Rickie Baroch &nbsp; 4 comments</p>
+                        <div class="review__information">
+                            <p class="review__data">June 6, 2019 &nbsp; <span>By</span> <a href="#">Rickie Baroch</a> &nbsp; <a href="#"> 4 comments</a></p>
+                        </div>
                     </header>
                 </div>
             </section>
@@ -49,51 +53,51 @@
                 <div class="newsgroup-one__wrapper">
                 <ul class="newsgroup-one__list block-list">
                     <li class="block-list__item">
-                        <img class="block-list__image" src="img/Bitmap.jpg" alt="Tourism fashion" width="370" height="280">
+                        <img class="block-list__image" src="img/Bitmap.jpg" alt="Tourism fashion">
                         <div class="block-list__description">
-                        <p class="block-list__author">Tourism</p>
-                        <p class="block-list__message"><a href="#">One of Saturn’s largest rings <br> may be newer than anyone</a></p>
-                        <p class="block-list__information">June 6, 2019 &nbsp; <span>By</span> Rickie Baroch</p>
+                        <div class="block-list__category">Tourism</div>
+                        <div class="block-list__message"><a href="#">One of Saturn’s largest rings <br> may be newer than anyone</a></div>
+                        <div class="block-list__information">June 6, 2019 &nbsp; <span>By</span> <a href="#">Rickie Baroch</a></div>
                         </div>
                     </li>
                     <li class="block-list__item">
-                        <img class="block-list__image" src="img/Bitmap-3.jpg" alt="Sport fashion" width="370" height="280">
+                        <img class="block-list__image" src="img/Bitmap-3.jpg" alt="Sport fashion">
                         <div class="block-list__description">
-                        <p class="block-list__author">sport</p>
-                        <p class="block-list__message"><a href="#">One of Saturn’s largest rings <br> may be newer than anyone</a></p>
-                        <p class="block-list__information">June 6, 2019 &nbsp; <span>By</span> Rickie Baroch</p>
+                        <div class="block-list__category">sport</div>
+                        <div class="block-list__message"><a href="#">One of Saturn’s largest rings <br> may be newer than anyone</a></div>
+                        <div class="block-list__information">June 6, 2019 &nbsp; <span>By</span> <a href="#">Rickie Baroch</a></div>
                         </div>
                     </li>
                     <li class="block-list__item">
-                        <img class="block-list__image" src="img/Bitmap-1.jpg" alt="Fashion" width="370" height="280">
+                        <img class="block-list__image" src="img/Bitmap-1.jpg" alt="Fashion">
                         <div class="block-list__description">
-                        <p class="block-list__author">fashion</p>
-                        <p class="block-list__message"><a href="#">One of Saturn’s largest rings <br> may be newer than anyone</a></p>
-                        <p class="block-list__information">June 6, 2019 &nbsp; <span>By</span> Rickie Baroch</p>
+                        <div class="block-list__category">fashion</div>
+                        <div class="block-list__message"><a href="#">One of Saturn’s largest rings <br> may be newer than anyone</a></div>
+                        <div class="block-list__information">June 6, 2019 &nbsp; <span>By</span> <a href="#">Rickie Baroch</a></div>
                         </div>
                     </li>
                     <li class="block-list__item">
-                        <img class="block-list__image" src="img/Bitmap-4.jpg" alt="Clothes fashion" width="370" height="280">
+                        <img class="block-list__image" src="img/Bitmap-4.jpg" alt="Clothes fashion">
                         <div class="block-list__description">
-                        <p class="block-list__author">clothes</p>
-                        <p class="block-list__message"><a href="#">One of Saturn’s largest rings <br> may be newer than anyone</a></p>
-                        <p class="block-list__information">June 6, 2019 &nbsp; <span>By</span> Rickie Baroch</p>
+                        <div class="block-list__category">clothes</div>
+                        <div class="block-list__message"><a href="#">One of Saturn’s largest rings <br> may be newer than anyone</a></div>
+                        <div class="block-list__information">June 6, 2019 &nbsp; <span>By</span> <a href="#">Rickie Baroch</a></div>
                         </div>
                     </li>
                     <li class="block-list__item">
-                        <img class="block-list__image" src="img/Bitmap-2.jpg" alt="Clothes fashion" width="370" height="280">
+                        <img class="block-list__image" src="img/Bitmap-2.jpg" alt="Clothes fashion">
                         <div class="block-list__description">
-                        <p class="block-list__author">clothes</p>
-                        <p class="block-list__message"><a href="#">One of Saturn’s largest rings <br> may be newer than anyone</a></p>
-                        <p class="block-list__information">June 6, 2019 &nbsp; <span>By</span> Rickie Baroch</p>
+                        <div class="block-list__category">clothes</div>
+                        <div class="block-list__message"><a href="#">One of Saturn’s largest rings <br> may be newer than anyone</a></div>
+                        <div class="block-list__information">June 6, 2019 &nbsp; <span>By</span> <a href="#">Rickie Baroch</a></div>
                         </div>
                     </li>
                     <li class="block-list__item">
-                        <img class="block-list__image" src="img/Bitmap-5.jpg" alt="Fashion" width="370" height="280">
+                        <img class="block-list__image" src="img/Bitmap-5.jpg" alt="Fashion">
                         <div class="block-list__description">
-                        <p class="block-list__author">fashion</p>
-                        <p class="block-list__message"><a href="#">One of Saturn’s largest rings <br> may be newer than anyone</a></p>
-                        <p class="block-list__information">June 6, 2019 &nbsp; <span>By</span> Rickie Baroch</p>
+                        <div class="block-list__category">fashion</div>
+                        <div class="block-list__message"><a href="#">One of Saturn’s largest rings <br> may be newer than anyone</a></div>
+                        <div class="block-list__information">June 6, 2019 &nbsp; <span>By</span> <a href="#">Rickie Baroch</a></div>
                         </div>
                     </li>
                 </ul>
@@ -101,11 +105,11 @@
             </section>
             <section class="newsgroup-main">
                 <div class="newsgroup-main__wrapper">
-                    <img class="newsgroup-main__image" src="img/Bitmap-6.jpg" alt="Summer fashion" width="770" height="349">
+                    <img class="newsgroup-main__image" src="img/Bitmap-6.jpg" alt="Summer fashion">
                     <div class="newsgroup-main__group">
                     <p class="newsgroup-main__author">Summer</p>
                     <p class="newsgroup-main__message"><a href="#">One of Saturn’s largest rings may be newer than anyone</a></p>
-                    <p class="newsgroup-main__information">June 6, 2019 &nbsp; <span>By</span> Rickie Baroch &nbsp; 6 comments</p>
+                    <p class="newsgroup-main__information">June 6, 2019 &nbsp; <span>By</span> <a href="#">Rickie Baroch</a> &nbsp; <a href="#">6 comments</a></p>
                     <p class="newsgroup-main__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
                         accusantium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit 
                         voluptatem accusantium doloremque laudantium, totam rem</p>
@@ -116,48 +120,60 @@
                 <div class="newsgroup-two__wrapper">
                 <ul class="newsgroup-two__list block-list">
                     <li class="block-list__item">
-                        <img class="block-list__image" src="img/Bitmap-7.jpg" alt="Autumn fashion" width="370" height="280">
+                        <img class="block-list__image" src="img/Bitmap-7.jpg" alt="Autumn fashion">
                         <div class="block-list__description">
-                        <p class="block-list__author">autumn</p>
-                        <p class="block-list__message"><a href="#">One of Saturn’s largest rings <br> may be newer than anyone</a></p>
-                        <p class="block-list__information">June 6, 2019 &nbsp; <span>By</span> Rickie Baroch</p>
+                        <div class="block-list__category">autumn</div>
+                        <div class="block-list__message"><a href="#">One of Saturn’s largest rings <br> may be newer than anyone</a></div>
+                        <div class="block-list__information">June 6, 2019 &nbsp; <span>By</span> <a href="#">Rickie Baroch</a></div>
                         </div>
                     </li>
                     <li class="block-list__item">
-                        <img class="block-list__image" src="img/Bitmap-9.jpg" alt="Clothes" width="370" height="280">
+                        <img class="block-list__image" src="img/Bitmap-9.jpg" alt="Clothes">
                         <div class="block-list__description">
-                        <p class="block-list__author">clothes</p>
-                        <p class="block-list__message"><a href="#">One of Saturn’s largest rings <br> may be newer than anyone</a></p>
-                        <p class="block-list__information">June 6, 2019 &nbsp; <span>By</span> Rickie Baroch</p>
+                        <div class="block-list__category">clothes</div>
+                        <div class="block-list__message"><a href="#">One of Saturn’s largest rings <br> may be newer than anyone</a></div>
+                        <div class="block-list__information">June 6, 2019 &nbsp; <span>By</span> <a href="#">Rickie Baroch</a></div>
                         </div>
                     </li>
                     <li class="block-list__item">
-                        <img class="block-list__image" src="img/Bitmap-8.jpg" alt="Summer fashion" width="370" height="280">
+                        <img class="block-list__image" src="img/Bitmap-8.jpg" alt="Summer fashion">
                         <div class="block-list__description">
-                        <p class="block-list__author">summer</p>
-                        <p class="block-list__message"><a href="#">One of Saturn’s largest rings <br> may be newer than anyone</a></p>
-                        <p class="block-list__information">June 6, 2019 &nbsp; <span>By</span> Rickie Baroch</p>
+                        <div class="block-list__category">summer</div>
+                        <div class="block-list__message"><a href="#">One of Saturn’s largest rings <br> may be newer than anyone</a></div>
+                        <div class="block-list__information">June 6, 2019 &nbsp; <span>By</span> <a href="#">Rickie Baroch</a></div>
                         </div>
                     </li>
                     <li class="block-list__item">
-                        <img class="block-list__image" src="img/Bitmap-10.jpg" alt="Summer fashion" width="370" height="280">
+                        <img class="block-list__image" src="img/Bitmap-10.jpg" alt="Summer fashion">
                         <div class="block-list__description">
-                        <p class="block-list__author">summer</p>
-                        <p class="block-list__message"><a href="#">One of Saturn’s largest rings <br> may be newer than anyone</a></p>
-                        <p class="block-list__information">June 6, 2019 &nbsp; <span>By</span> Rickie Baroch</p>
+                        <div class="block-list__category">summer</div>
+                        <div class="block-list__message"><a href="#">One of Saturn’s largest rings <br> may be newer than anyone</a></div>
+                        <div class="block-list__information">June 6, 2019 &nbsp; <span>By</span> <a href="#">Rickie Baroch</a></div>
                         </div>
                     </li>
-                <div class="newsgroup-two__slider">
-                    <div class="newsgroup-two__toggles slider__toggle">
-                        <img class="newsgroup-two__prev" src="img/Path.svg" width="6px" height="10px" alt="path">
-                        <a class="slider-toggle slider-toggle--disable" href="#">Older post</a>
-                        <a class="slider-toggle slider-toggle__item" href="#">1</a>
-                        <a class="slider-toggle slider-toggle__item" href="#">2</a>
-                        <a class="slider-toggle slider-toggle__item" href="#">3</a>
-                        <a class="slider-toggle slider-toggle__item" href="#">...</a>
-                        <a class="slider-toggle slider-toggle__item" href="#">8</a>
-                        <a class="newsgroup-two__prev slider-toggle" href="#">Next post</a>
-                        <img class="newsgroup-two__next" src="img/Path.svg" width="6px" height="10px" alt="path">
+                <div class="newsgroup-two__pagination">
+                    <div class="newsgroup-two__toggles pagination__toggle">
+                        <div class="pagination-toggle">
+                        <a class="pagination-toggle--disable" href="#"><i class="fa fa-angle-left" aria-hidden="true"></i>Older post</a>
+                        </div>
+                        <div class="pagination-toggle">
+                        <a class="pagination-toggle__item" href="#">1</a>
+                        </div>
+                        <div class="pagination-toggle">
+                        <a class="pagination-toggle__item" href="#">2</a>
+                        </div>
+                        <div class="pagination-toggle">
+                        <a class="pagination-toggle__item" href="#">3</a>
+                        </div>
+                        <div class="pagination-toggle">
+                        <a class="pagination-toggle__item" href="#">...</a>
+                        </div>
+                        <div class="pagination-toggle">
+                        <a class="pagination-toggle__item" href="#">8</a>
+                        </div>
+                        <div class="pagination-toggle">
+                        <a class="newsgroup-two__prev" href="#">Next post<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -165,108 +181,113 @@
         <div class="block-secondary">
             <section class="additional-info">
                 <div class="additional-wrapper">
-                    <div class="about-author__info">
-                        <button class="additional-info__button" type="button"><p>About the author</p></button>
-                        <blockquote class="about-author">
-                        <img class="about-author__image" src="img/Bitmap-11.jpg" alt="Author foto" width="270" height="160">
-                        <div class="about-author__text">
-                        <p class="about-author__name">Kate Willems</p>
-                        <p class="about-author__profession">Food & cooking bloger</p>
-                        <p class="about-author__description">Hi, I'm Sonia. Cooking is the way I express my creative 
-                            side to the world. Welcome to my Kitchen Corner on…</p>
-                        <img class="about-author__element" src="img/Line-2.png" alt="Element" width="268" height="1">
-                        <a class="about-author__continue">Continue Reading</a>
+                    <div class="additional-info__button">
+                        <p>About the author</p>
+                    </div>
+                    <div class="about-author">
+                        <div class="about-author__picture">
+                            <img class="about-author__image" src="img/Bitmap-11.jpg" alt="Author foto">
                         </div>
-                        </blockquote>
+                        <div class="about-author__text">
+                            <strong class="about-author__name">Kate Willems</strong>
+                        </div>
+                        <div class="about-author__profession">Food & cooking bloger</div>
+                        <div class="about-author__description">Hi, I'm Sonia. Cooking is the way I express my creative 
+                            side to the world. Welcome to my Kitchen Corner on…</div>
+                        <div class="about-author__line">
+                            <img class="about-author__element" src="img/Line-2.png" alt="Element">
+                        </div>
+                        <div class="about-author__next">
+                        <a href="#" class="about-author__continue">Continue Reading</a>
+                        </div>
                     </div>
                     <div class="featured-post">
-                        <button class="additional-info__button" type="button"><p>Featured posts</p></button>
-                        <img class="featured-post__image" src="img/Bitmap-12.jpg" alt="Jeans fashion" width="270" height="160">
+                        <div class="additional-info__button"><p>Featured post</p></div>
+                        <img class="featured-post__image" src="img/Bitmap-12.jpg" alt="Jeans fashion">
                         <div class="featured-post__item">
-                        <p class="featured-post__author">jeans</p>
-                        <p class="featured-post__message"><a href="#">One of Saturn’s largest rings may be newer than anyone</a></p>
-                        <p class="featured-post__information">June 6, 2019 &nbsp; <span>By</span> Rickie Baroch</p>
+                        <div class="featured-post__author">jeans</div>
+                        <div class="featured-post__message"><a href="#">One of Saturn’s largest rings may be newer than anyone</a></div>
+                        <div class="featured-post__information">June 6, 2019 &nbsp; <span>By</span> <a href="#">Rickie Baroch</a></div>
                         </div>
-                        <img class="featured-post__image" src="img/Bitmap-13.jpg" alt="City fashion" width="270" height="160">
+                        <img class="featured-post__image" src="img/Bitmap-13.jpg" alt="City fashion">
                         <div class="featured-post__item">
-                        <p class="featured-post__author">city</p>
-                        <p class="featured-post__message"><a href="#">One of Saturn’s largest rings may be newer than anyone</a></p>
-                        <p class="featured-post__information">June 6, 2019 &nbsp; <span>By</span> Rickie Baroch</p>
+                        <div class="featured-post__author">city</div>
+                        <div class="featured-post__message"><a href="#">One of Saturn’s largest rings may be newer than anyone</a></div>
+                        <div class="featured-post__information">June 6, 2019 &nbsp; <span>By</span> <a href="#">Rickie Baroch</a></div>
                         </div>
-                        <img class="featured-post__image" src="img/Bitmap-14.jpg" alt="Photography fashion" width="270" height="160">
+                        <img class="featured-post__image" src="img/Bitmap-14.jpg" alt="Photography fashion">
                         <div class="featured-post__item">
-                        <p class="featured-post__author">photography</p>
-                        <p class="featured-post__message"><a href="#">One of Saturn’s largest rings may be newer than anyone</a></p>
-                        <p class="featured-post__information">June 6, 2019 &nbsp; <span>By</span> Rickie Baroch</p>
+                        <div class="featured-post__author">photography</div>
+                        <div class="featured-post__message"><a href="#">One of Saturn’s largest rings may be newer than anyone</a></div>
+                        <div class="featured-post__information">June 6, 2019 &nbsp; <span>By</span> <a href="#">Rickie Baroch</a></div>
                         </div>
                     <div class="categories">
-                        <button class="additional-info__button" type="button"><p>Categories</p></button>
-                        <table class="categories__stats">
-                            <tr>
-                                <td>Fashion</td>
-                                <td class="last-column">(23)</td>
-                            </tr>
-                            <tr>
-                                <td>Style & clothes</td>
-                                <td class="last-column">(7)</td>
-                            </tr>
-                            <tr>
-                                <td>Minimalism</td>
-                                <td class="last-column">(16)</td>
-                            </tr>
-                            <tr>
-                                <td>Black & White</td>
-                                <td class="last-column">(5)</td>
-                            </tr>
-                            <tr>
-                                <td class="last-row">Modern clothes</td>
-                                <td class="last-row last-column">(12)</td>
-                            </tr>
-                        </table>
+                        <div class="additional-info__button"><p>Categories</p></div>
+                        <div class="categories__stats">
+                            <div class="categories__list">
+                                <div class="categories__item">Fashion</div>
+                                <a class="last-column" href="#">(23)</a>
+                            </div>
+                            <div class="categories__list">
+                                <div class="categories__item">Style & clothes</div>
+                                <a class="last-column" href="#">(7)</a>
+                            </div>
+                            <div class="categories__list">
+                                <div class="categories__item">Minimalism</div>
+                                <a class="last-column" href="#">(16)</a>
+                            </div>
+                            <div class="categories__list">
+                                <div class="categories__item">Black & White</div>
+                                <a class="last-column" href="#">(5)</a>
+                            </div>
+                            <div class="categories__list">
+                                <div class="categories__item">Modern clothes</div>
+                                <a class="last-column" href="#">(12)</a>
+                            </div>
                     </div>
                     <div class="social">
-                        <button class="additional-info__button"><p>Social media</p></button>
+                        <div class="additional-info__button"><p>Social media</p></div>
                         <div class="social__icons">
-                            <div class="social__icon">
-                                <img src="img/facebook.svg" class="social__fb" width="11" height="20" alt="Facebook">
-                                <p class="social__stats">32k <br> likes</p>
-                            </div>
-                            <div class="social__icon">
-                                <img src="img/pinterest.svg" class="social__pt" width="15" height="20.2" alt="Pinterest">
-                                <p class="social__stats">814 <br> followers</p>
-                            </div>
-                            <div class="social__icon">
-                                <img src="img/vimeo.svg" class="social__vm" width="20" height="17.89" alt="Vimeo">
-                                <p class="social__stats">165 <br> followers</p>
-                            </div>
-                            <div class="social__icon">
-                                <img src="img/dribbble.svg" class="social__dr" width="20" height="20.2" alt="Dribble">
-                                <p class="social__stats">6k <br> followers</p>
-                            </div>
-                            <div class="social__icon">
-                                <img src="img/twitter.svg" class="social__tw" width="20" height="16.79" alt="Twitter">
-                                <p class="social__stats">130k <br> followers</p>
-                            </div>
-                            <div class="social__icon">
-                                <img src="img/behance.svg" class="social__bh" width="20" height="13.41" alt="Behance">
-                                <p class="social__stats">37k <br> followers</p>
-                            </div>
-                            <div class="social__icon">
-                                <img src="img/instagram.svg" class="social__in" width="20" height="20.2" alt="Instagram">
-                                <p class="social__stats">854k <br> followers</p>
-                            </div>
-                            <div class="social__icon">
-                                <img src="img/youtube.svg" class="social__yb" width="16" height="19.2" alt="YouTube">
-                                <p class="social__stats">52k <br> followers</p>
-                            </div>
-                            <div class="social__icon">
-                                <img src="img/google.svg" class="social__gg" width="22" height="14" alt="Google">
-                                <p class="social__stats">642 <br> followers</p>
-                            </div>
+                            <a href="#" class="social__icon">
+                                <img src="img/facebook.svg" class="social__fb" alt="Facebook">
+                                <div class="social__stats">32k <br> likes</div>
+                            </a>
+                            <a href="#" class="social__icon">
+                                <img src="img/pinterest.svg" class="social__pt" alt="Pinterest">
+                                <div class="social__stats">814 <br> followers</div>
+                            </a>
+                            <a href="#" class="social__icon">
+                                <img src="img/vimeo.svg" class="social__vm"  alt="Vimeo">
+                                <div class="social__stats">165 <br> followers</div>
+                            </a>
+                            <a href="#" class="social__icon">
+                                <img src="img/dribbble.svg" class="social__dr" alt="Dribble">
+                                <div class="social__stats">6k <br> followers</div>
+                            </a>
+                            <a href="#" class="social__icon">
+                                <img src="img/twitter.svg" class="social__tw" alt="Twitter">
+                                <div class="social__stats">130k <br> followers</div>
+                            </a>
+                            <a href="#" class="social__icon">
+                                <img src="img/behance.svg" class="social__bh" alt="Behance">
+                                <div class="social__stats">37k <br> followers</div>
+                            </a>
+                            <a href="#" class="social__icon">
+                                <img src="img/instagram.svg" class="social__in" alt="Instagram">
+                                <div class="social__stats">854k <br> followers</div>
+                            </a>
+                            <a href="#" class="social__icon">
+                                <img src="img/youtube.svg" class="social__yb" alt="YouTube">
+                                <div class="social__stats">52k <br> subscribers</div>
+                            </a>
+                            <a href="#" class="social__icon">
+                                <img src="img/google.svg" class="social__gg" alt="Google">
+                                <div class="social__stats">642 <br> followers</div>
+                            </a>
                         </div>
                     </div>
                     <div class="tags">
-                        <button class="additional-info__button"><p>Tags</p></button>
+                        <div class="additional-info__button"><p>Tags</p></div>
                         <div class="tags__items">
                             <a href="#">Business</a>
                             <a href="#">Freelance</a>
@@ -289,13 +310,25 @@
             <section class="social-blog">
                 <h3 class="social-blog__header">Follow our @instagram_name</h3>
                 <div class="social-blog__wrapper">
-                    <div class="social-blog__photo">
-                        <img src="img/Bitmap-15.jpg" alt="first-photo" width="296px" height="296px">
-                        <img src="img/Bitmap-16.jpg" alt="first-photo" width="296px" height="296px">
-                        <img src="img/Bitmap-17.jpg" alt="first-photo" width="296px" height="296px">
-                        <img src="img/Bitmap-18.jpg" alt="first-photo" width="296px" height="296px">
-                        <img src="img/Bitmap-19.jpg" alt="first-photo" width="296px" height="296px">
-                        <img src="img/Bitmap-20.jpg" alt="first-photo" width="296px" height="296px">
+                    <div class="social-blog__collection">
+                        <div class="social-blog__image" href="#">
+                        <img class="social-blog__photo" src="img/Bitmap-15.jpg" alt="first-photo">
+                        </div>
+                        <div class="social-blog__image" href="#">
+                        <img class="social-blog__photo" src="img/Bitmap-16.jpg" alt="first-photo">
+                        </div>
+                        <div class="social-blog__image" href="#">
+                        <img class="social-blog__photo" src="img/Bitmap-17.jpg" alt="first-photo">
+                        </div>
+                        <div class="social-blog__image" href="#">
+                        <img class="social-blog__photo" src="img/Bitmap-18.jpg" alt="first-photo">
+                        </div>
+                        <div class="social-blog__image" href="#">
+                        <img class="social-blog__photo" src="img/Bitmap-19.jpg" alt="first-photo">
+                        </div>
+                        <div class="social-blog__image" href="#">
+                        <img class="social-blog__photo" src="img/Bitmap-20.jpg" alt="first-photo">
+                        </div>
                     </div>
                 </div>
             </section>
@@ -304,19 +337,16 @@
             <h3 class="page-footer__header">Fashion</h3>
             <nav class="footer-nav">
                 <ul class="footer-nav__list">
-                    <li class="footer-nav__item">Home</li>
-                    <li class="footer-nav__item">Recipes</li>
-                    <li class="footer-nav__item">Article</li>
-                    <li class="footer-nav__item">Contact</li>
-                    <li class="footer-nav__item">Purchase</li>
+                    <li class="footer-nav__item"><a href="#">Home</a></li>
+                    <li class="footer-nav__item"><a href="#">Recipes</a></li>
+                    <li class="footer-nav__item"><a href="#">Article</a></li>
+                    <li class="footer-nav__item"><a href="#">Contact</a></li>
+                    <li class="footer-nav__item"><a href="#">Purchase</a></li>
                 </ul>
             </nav>
             <div class="page-footer__social">
                 <a href="#" class="footer-icon">
                 <img src="img/facebook_footer.svg" class="icon-image" width="9px" height="16px" alt="Facebook">
-                </a>
-                <a href="#" class="footer-icon footer-icon--active">
-                <img src="img/twitter_footer.svg" class="icon-image" width="15.58px" height="12.75px" alt="Twitter">
                 </a>
                 <a href="#" class="footer-icon">
                 <img src="img/pinterest_footer.svg" class="icon-image" width="13px" height="16px" alt="Pinterest">
