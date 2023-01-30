@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <title>Fashion Blog Template</title>
     <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
@@ -11,47 +11,58 @@
     <script src="js/main.js"></script>
 </head>
 <body class="page__body">
-    <header class="main-header">
-        <a class="main-header__logo">Fashion</a>
-        <nav class="main-nav">
-            <div class="main-nav__wrapper">
-                <ul class="main-nav__list site-list">
-                    <li class="site-list__item site-list__item--active">
-                        <a href="#">Home</a>
-                    </li>
-                    <li class="site-list__item">
-                        <a href="#">Recipes</a>
-                    </li>
-                    <li class="site-list__item">
-                        <a href="#">Article</a>
-                    </li>
-                    <li class="site-list__item">
-                        <a href="#">Contact</a>
-                    </li>
-                    <li class="site-list__item">
-                        <a href="#">Purchase</a>
-                    </li>
-                </ul>
+    <div class="main-header__wrapper">
+        <header class="main-header">
+            <div class="main-header__container">
+                <div class="main-header__body">
+                    <a class="main-header__logo">
+                        Fashion
+                    </a>
+                        <div class="header__burger">
+                            <span></span>
+                        </div>
+                        <nav class="main-nav">
+                            <ul class="main-nav__list site-list">
+                                <li class="site-list__item site-list__item--active">
+                                    <a href="#">Home</a>
+                                </li>
+                                <li class="site-list__item">
+                                    <a href="#">Recipes</a>
+                                </li>
+                                <li class="site-list__item">
+                                    <a href="#">Article</a>
+                                </li>
+                                <li class="site-list__item">
+                                    <a href="#">Contact</a>
+                                </li>
+                                <li class="site-list__item">
+                                    <a href="#">Purchase</a>
+                                </li>
+                            </ul>
+                        </nav>
+                </div>
             </div>
-        </nav>
-    </header>
+        </header>
+    </div>
     <main class="main-container">
-        <div class="block-main">
             <section class="review">
                 <div class="review__wrapper">
-                    <div class="review__gradient"><img class="review__image" alt="Main image" src="img/Bitmap-21.jpg"></div>
-                    <header class="review__example">
+                    <div class="review__gradient">
+                        
+                    </div>
+                    <div class="review__example">
                         <p class="review__autor">Vehicle</p>
                         <h2 class="review__message">One of Saturn’s largest rings may be newer than anyone</h2>
                         <div class="review__information">
                             <p class="review__data">June 6, 2019 &nbsp; <span>By</span> <a href="#">Rickie Baroch</a> &nbsp; <a href="#"> 4 comments</a></p>
                         </div>
-                    </header>
+                    </div>
                 </div>
             </section>
-            <section class="newsgroup-one">
-                <div class="newsgroup-one__wrapper">
-                <ul class="newsgroup-one__list block-list">
+        <div class="block-main">
+            <section class="newsgroup">
+                <div class="newsgroup__wrapper">
+                <ul class="newsgroup__list block-list">
                     <li class="block-list__item">
                         <img class="block-list__image" src="img/Bitmap.jpg" alt="Tourism fashion">
                         <div class="block-list__description">
@@ -100,25 +111,17 @@
                         <div class="block-list__information">June 6, 2019 &nbsp; <span>By</span> <a href="#">Rickie Baroch</a></div>
                         </div>
                     </li>
-                </ul>
-            </div>
-            </section>
-            <section class="newsgroup-main">
-                <div class="newsgroup-main__wrapper">
-                    <img class="newsgroup-main__image" src="img/Bitmap-6.jpg" alt="Summer fashion">
-                    <div class="newsgroup-main__group">
-                    <p class="newsgroup-main__author">Summer</p>
-                    <p class="newsgroup-main__message"><a href="#">One of Saturn’s largest rings may be newer than anyone</a></p>
-                    <p class="newsgroup-main__information">June 6, 2019 &nbsp; <span>By</span> <a href="#">Rickie Baroch</a> &nbsp; <a href="#">6 comments</a></p>
-                    <p class="newsgroup-main__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
+                    <li class="block-list__main">
+                        <img class="block-main__image" src="img/Bitmap-6.jpg" alt="Summer fashion">
+                        <div class="block-main__group">
+                        <p class="block-main__author">Summer</p>
+                        <p class="block-main__message"><a href="#">One of Saturn’s largest rings may be newer than anyone</a></p>
+                        <p class="block-main__information">June 6, 2019 &nbsp; <span>By</span> <a href="#">Rickie Baroch</a> &nbsp; <a href="#">6 comments</a></p>
+                        <p class="block-main__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
                         accusantium doloremque laudantium, totam rem sed ut perspiciatis unde omnis iste natus error sit 
-                        voluptatem accusantium doloremque laudantium, totam rem</p>
-                    </div>
-                </div>
-            </section>
-            <section class="newsgroup-two">
-                <div class="newsgroup-two__wrapper">
-                <ul class="newsgroup-two__list block-list">
+                         voluptatem accusantium doloremque laudantium, totam rem</p>
+                        </div>
+                    </li>
                     <li class="block-list__item">
                         <img class="block-list__image" src="img/Bitmap-7.jpg" alt="Autumn fashion">
                         <div class="block-list__description">
@@ -151,8 +154,9 @@
                         <div class="block-list__information">June 6, 2019 &nbsp; <span>By</span> <a href="#">Rickie Baroch</a></div>
                         </div>
                     </li>
-                <div class="newsgroup-two__pagination">
-                    <div class="newsgroup-two__toggles pagination__toggle">
+                </ul>
+                <div class="block-list__pagination">
+                    <div class="block-list__toggles pagination__toggle">
                         <div class="pagination-toggle">
                         <a class="pagination-toggle--disable" href="#"><i class="fa fa-angle-left" aria-hidden="true"></i>Older post</a>
                         </div>
@@ -172,13 +176,12 @@
                         <a class="pagination-toggle__item" href="#">8</a>
                         </div>
                         <div class="pagination-toggle">
-                        <a class="newsgroup-two__prev" href="#">Next post<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                        <a class="block-list__prev" href="#">Next post<i class="fa fa-angle-right" aria-hidden="true"></i></a>
                         </div>
                     </div>
                 </div>
+            </div>
             </section>
-        </div>
-        <div class="block-secondary">
             <section class="additional-info">
                 <div class="additional-wrapper">
                     <div class="additional-info__button">

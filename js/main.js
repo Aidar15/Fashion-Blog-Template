@@ -14,4 +14,9 @@ $(function(){
         $('#close-popup, #magnify, #overlay').remove();
         });
     });
+
+    $('.header__burger').click(function(e) {
+        $('.header__burger,.main-nav').toggleClass('active');
+        $('body').toggleClass('lock');
+    })
 });
